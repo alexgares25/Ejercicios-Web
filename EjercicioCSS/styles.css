@@ -1,0 +1,209 @@
+/* ---------- Reset básico y box-sizing (selector universal) ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f7f8fa;
+}
+
+/* ---------- Cabecera (selector de tipo) ---------- */
+header {
+  background-color: #0033a0;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+header img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Menú superior dentro del header (selector descendiente) */
+header nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* Pseudo-clase :hover */
+header nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ---------- Layout con menú lateral ---------- */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Menú lateral (selector de clase) */
+.menu-lateral {
+  background-color: #1a1a2e;
+  width: 220px;
+  padding: 20px 0;
+}
+
+.menu-lateral ul {
+  list-style: none;
+}
+
+.menu-lateral li a {
+  display: block;
+  color: #eaeaea;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-left: 4px solid transparent;
+}
+
+.menu-lateral li a:hover {
+  background-color: #24243e;
+  border-left: 4px solid #4cc9f0;
+}
+
+/* ---------- Contenido principal ---------- */
+main {
+  flex: 1;
+  padding: 30px;
+  min-width: 280px;
+}
+
+/* Selector de ID */
+#sobre-mi {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #0033a0;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Selector de atributo */
+span[style] {
+  font-weight: bold;
+}
+
+/* Listas */
+ul, ol {
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+dl dt {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+dl dd {
+  margin-left: 20px;
+  color: #555;
+}
+
+/* ---------- Tabla ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #0033a0;
+  color: white;
+}
+
+/* Selector nth-child: filas alternas */
+tr:nth-child(even) {
+  background-color: #f2f4fa;
+}
+
+/* ---------- Formulario ---------- */
+form label {
+  display: inline-block;
+  width: 90px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 220px;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: #0033a0;
+}
+
+button {
+  background-color: #0033a0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #002270;
+}
+
+/* ---------- Aside / Footer ---------- */
+aside#contacto {
+  background-color: #eef2ff;
+  border-left: 4px solid #0033a0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a2e;
+  color: #ccc;
+}
+
+footer a {
+  color: #4cc9f0;
+}

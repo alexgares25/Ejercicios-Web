@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ejercicio de HTML para Sistemas Web I">
+    <meta name="author" content="Alex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página HTML</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Cabecera de la página -->
+    <header>
+      <h1>Bienvenido a mi ejercicio de HTML</h1>
+      <img src="https://concepto.de/wp-content/uploads/2020/08/Programacion-informatica-scaled-e1724960033513-2048x1024.jpg" alt="Ejemplo de programación" width="500">
+    </header>
+
+    <div class="contenedor">
+      <nav class="menu-lateral">
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#aficiones">Aficiones</a></li>
+          <li><a href="#horario">Horario</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <section id="sobre-mi">
+          <h2>Sobre mí</h2>
+          <p>
+            Soy <strong>estudiante universitario</strong> y este documento es un
+            <em>ejercicio práctico</em> de la asignatura <span style="color:#0033a0">Sistemas Web I</span>.
+            Aquí pongo en práctica varias etiquetas de HTML.
+          </p>
+          <p>Algunos datos rápidos, con salto de línea:<br>
+          Curso: Grado universitario<br>
+          Tema: Introducción a HTML</p>
+        </section>
+
+        <section id="aficiones">
+          <h2>Aficiones</h2>
+
+          <h3>Lista ordenada</h3>
+          <ol>
+            <li>Programar</li>
+            <li>Leer</li>
+            <li>Hacer deporte</li>
+          </ol>
+
+          <h3>Lista sin ordenar</h3>
+          <ul>
+            <li>Café</li>
+            <li>Té</li>
+            <li>Chocolate</li>
+          </ul>
+
+          <h3>Lista de descripción</h3>
+          <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje de marcado para estructurar páginas web.</dd>
+            <dt>CSS</dt>
+            <dd>Lenguaje para dar estilo a las páginas web.</dd>
+          </dl>
+        </section>
+
+        <section id="horario">
+          <h2>Horario de ejemplo</h2>
+          <table border="1" cellpadding="6">
+            <tr>
+              <th>Día</th>
+              <th>Asignatura</th>
+            </tr>
+            <tr>
+              <td>Lunes</td>
+              <td>Sistemas Web I</td>
+            </tr>
+            <tr>
+              <td>Martes</td>
+              <td>Modelos de Computación</td>
+            </tr>
+          </table>
+        </section>
+
+        <article>
+          <h2>Formulario de contacto</h2>
+          <form action="#" method="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required><br><br>
+
+            <label for="email">Correo:</label>
+            <input type="text" id="email" name="email" placeholder="tucorreo@ejemplo.com"><br><br>
+
+            <label for="asunto">Asunto:</label>
+            <select id="asunto" name="asunto">
+              <option value="duda">Duda</option>
+              <option value="sugerencia">Sugerencia</option>
+              <option value="otro">Otro</option>
+            </select><br><br>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </article>
+
+        <aside id="contacto">
+          <h2>Más información</h2>
+          <p>Puedes ver el código fuente de esta página en
+            <a href="https://github.com/alexgares25/Ejercicios-Web" target="_blank">GitHub</a>.
+          </p>
+        </aside>
+      </main>
+    </div>
+
+    <footer>
+      <p>Hecho con &lt;html&gt; por Alejandro Gómez Ares, para la asignatura Sistemas Web I &copy; 2026</p>
+    </footer>
+  </body>
+</html>
