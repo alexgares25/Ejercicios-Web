@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Generador de contraseñas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Generador de contraseñas</h1>
+
+    <section id="opciones">
+      <label>
+        Número de palabras:
+        <input type="number" id="numPalabras" value="4" min="1" max="10">
+      </label>
+
+      <label>
+        Separador:
+        <input type="text" id="separador" value="-" maxlength="3">
+      </label>
+
+      <label class="check">
+        <input type="checkbox" id="mayusculas" checked>
+        Empezar cada palabra en mayúscula
+      </label>
+
+      <label class="check">
+        <input type="checkbox" id="sinRepetir" checked>
+        No repetir palabras
+      </label>
+
+      <label class="check">
+        <input type="checkbox" id="añadirNumero">
+        Añadir un número al final
+      </label>
+
+      <button id="generar">Generar contraseña</button>
+    </section>
+
+    <section id="resultado" hidden>
+      <output id="password"></output>
+      <p id="info"></p>
+      <button id="copiar">Copiar</button>
+    </section>
+  </main>
+</body>
+</html>
