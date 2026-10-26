@@ -1,9 +1,0 @@
-{
-  "intervalo": 5,
-  "mostrar": {
-    "cpu": true,
-    "memoria": true,
-    "uptimeSistema": true,
-    "uptimeNode": true
-  }
-}
